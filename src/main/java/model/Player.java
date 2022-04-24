@@ -10,7 +10,9 @@ public class Player extends  Person {
     private Integer score;
 
 
-    public Player(){}
+    public Player(){
+
+    }
 
 
     @Override

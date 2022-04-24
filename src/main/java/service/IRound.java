@@ -1,6 +1,6 @@
 package service;
 
-import model.Player;
+import model.Option;
 
 /**
  *Represent game's round
@@ -12,10 +12,18 @@ public interface IRound {
 
 
     /**
-     *Init a new round of the category
+     *Init a new round of the category.
      */
     void initRound(Integer category);
 
+    /**
+     *check if it is the last round.
+     */
+    Boolean isLastRound(Integer category);
 
+    /**
+     * check the answer.
+     */
+    void checkAnswer(Round round, Option optionSelected);
 
 }

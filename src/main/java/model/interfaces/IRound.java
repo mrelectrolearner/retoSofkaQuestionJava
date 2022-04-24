@@ -18,7 +18,7 @@ public interface IRound {
 
     Question getQuestion();
 
-    void setQuestion(String question);
+    void setQuestion(Question question);
 
     Integer getCategory();
 

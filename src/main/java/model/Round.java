@@ -44,9 +44,9 @@ public class Round implements IRound {
     }
 
     @Override
-    public void setQuestion(String question) {
+    public void setQuestion(Question question) {
 
-        this.question = new Question(question);;
+        this.question = question;
     }
 
     @Override
