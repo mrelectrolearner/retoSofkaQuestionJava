@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720863f6-cfb6-4a5d-b601-cb40587061d1" name="Changes" comment="update database connection: the database connection was updated in order to work with the local database in my pc.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="720863f6-cfb6-4a5d-b601-cb40587061d1" name="Changes" comment="update OptionDao and QuestionDao: the query for allowing to bring questions and answer options from the database to the app were implemented.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Information.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Option.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Round.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Round.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/QuestionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/interfaces/IGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/interfaces/IOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/interfaces/IOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/interfaces/IPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/interfaces/IRound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/interfaces/IRound.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650809324583</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update OptionDao and QuestionDao: the query for allowing to bring questions and answer options from the database to the app were implemented.">
+      <created>1650812734088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650812734088</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +120,7 @@
     <MESSAGE value="Create retoSofkaJavaMaven project: the project was created and structured. Some clases, interface and abstract class were added." />
     <MESSAGE value="update retoSofkaJavaMaven project: create a new interface Round and was implemented.java and change the name of the methods of the class Information. the class Information was extended in the classes Question and Option" />
     <MESSAGE value="update database connection: the database connection was updated in order to work with the local database in my pc." />
-    <option name="LAST_COMMIT_MESSAGE" value="update database connection: the database connection was updated in order to work with the local database in my pc." />
+    <MESSAGE value="update OptionDao and QuestionDao: the query for allowing to bring questions and answer options from the database to the app were implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="update OptionDao and QuestionDao: the query for allowing to bring questions and answer options from the database to the app were implemented." />
   </component>
 </project>
