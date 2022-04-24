@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720863f6-cfb6-4a5d-b601-cb40587061d1" name="Changes" comment="implement the interface GameService and RoundService">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GameController.java" afterDir="false" />
+    <list default="true" id="720863f6-cfb6-4a5d-b601-cb40587061d1" name="Changes" comment="update git ignore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/GameDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/GameDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/IGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IGameService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650825764231</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="an error in the method findOption in playerDao was corrected and implemented the interface GameService and RoundService">
+      <created>1650834677876</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1650834677876</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update git ignore">
+      <created>1650836176222</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1650836176222</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +170,8 @@
     <MESSAGE value="update Option, Player and Question: the interfaces of each class were implemented." />
     <MESSAGE value="update Round interface: the round interface was updated, adding some methods, and it was implemented." />
     <MESSAGE value="implement the interface GameService and RoundService" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement the interface GameService and RoundService" />
+    <MESSAGE value="an error in the method findOption in playerDao was corrected and implemented the interface GameService and RoundService" />
+    <MESSAGE value="update git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="update git ignore" />
   </component>
 </project>
