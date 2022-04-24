@@ -14,9 +14,9 @@ import java.util.List;
 public class GameDao {
     public GameDao(){}
 
-    public List<String> getGamesInfo(){
-        return [];
-    }
+    /*public void List<String> getGamesInfo(){
+        //return [];
+    }*/
 
     private Integer getPlayerIdByPlayerName(String playerName){
       return 0;

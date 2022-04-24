@@ -25,7 +25,7 @@ public class PlayerDao extends ConnectionDB{
         Connection con = getConnection();
         ResultSet rs = null;
 
-        String query = "SELECT * FROM players";
+        String query = "SELECT * FROM player";
         try {
             ps = con.prepareStatement(query);
             rs = ps.executeQuery();
