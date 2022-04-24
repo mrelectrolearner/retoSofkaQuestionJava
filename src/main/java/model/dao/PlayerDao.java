@@ -9,17 +9,19 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
- *Represent the player dao, allowing to interact with the database
- * @version 1.0.0 2022-04-22.
+ * Represent the player dao, allowing to interact with the database
+ *
  * @author
+ * @version 1.0.0 2022-04-22.
  * @since 1.0.0 2022-04-22.
  */
-public class PlayerDao extends ConnectionDB{
+public class PlayerDao extends ConnectionDB {
 
-    public PlayerDao(){}
+    public PlayerDao() {
+    }
 
 
-    public ArrayList<Player> getPlayersInfo()  {
+    public ArrayList<Player> getPlayersInfo() {
 
         PreparedStatement ps = null;
         Connection con = getConnection();
@@ -29,16 +31,15 @@ public class PlayerDao extends ConnectionDB{
         try {
             ps = con.prepareStatement(query);
             rs = ps.executeQuery();
-            ArrayList<Player> winnersList=new ArrayList<>();
+            ArrayList<Player> winnersList = new ArrayList<>();
             while (rs.next()) {
                 //add code to print in jTable
-                Player winner=new Player();
+                Player winner = new Player();
                 winner.setId((Integer) rs.getObject(1));
                 winner.setName(String.valueOf(rs.getObject(2)));
                 winner.setScore((Integer) rs.getObject(3));
                 winnersList.add(winner);     //create the list of the winners
             }
-
             return winnersList;
 
         } catch (SQLException e) {
@@ -50,10 +51,19 @@ public class PlayerDao extends ConnectionDB{
 
             } catch (SQLException e) {
                 System.err.println(e);
-
             }
         }
+    }
 
+    public static void sevePlayer(Player player) throws SQLException {
+        try (Connection connection = getConnection()) {
+            String query = "INSERT INTO player (player_name, points) VALUES (?, ?)";
+            PreparedStatement ps = connection.prepareStatement(query);
+            ps.setString(1, player.getName());
+            ps.setString(1, player.getScore());
+            ps.executeUpdate();
+            connection.close();
+        }
     }
 
 
