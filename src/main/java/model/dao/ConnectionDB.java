@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class ConnectionDB {
     private String url = "jdbc:mysql://localhost/database_challenge";
     private String user = "root";
-    private String password = "MySQL_315660";
+    private String password = "12345";
     private Connection con = null;
 
     public Connection getConnection() {
