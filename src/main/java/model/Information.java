@@ -6,6 +6,7 @@ package model;
  * @since 1.0.0 2022-04-22.
  */
 public class Information {
+    public  Integer id;
     protected String text;
 
     public Information(String text) {
@@ -19,5 +20,11 @@ public class Information {
         this.text= text;
     }
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }
