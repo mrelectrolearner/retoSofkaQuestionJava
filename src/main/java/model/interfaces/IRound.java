@@ -25,6 +25,8 @@ public interface IRound {
 
     void setCategory(Integer category);
 
+    void increaseCategory();
+
 
     Player getPlayer();
 

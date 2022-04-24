@@ -1,12 +1,18 @@
 package service;
 
+import model.Option;
 import model.Player;
+import model.Round;
 
 public interface IGameService {
 
-    void leaveGame(Round round, Player player);
+    void leaveGame(Round round);
 
-    void endGame(Round round, Player player);
+    void endGame(Round round);
 
-    void initGame(Round round, Player player);
+    Round initGame(Player player);
+
+    Round nextRound(Round round);
+
+    Round nextRound(Round round, Option optionSelected);
 }

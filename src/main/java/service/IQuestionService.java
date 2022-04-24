@@ -7,11 +7,10 @@ import java.util.ArrayList;
 
 public interface IQuestionService {
 
-    /**
-     * select randomly a question.
-     */
-    Question selectQuestion(Integer category);
 
+
+
+    Question getRandomQuestion(Integer category);
 
     /**
      * get the list of options for a question.
