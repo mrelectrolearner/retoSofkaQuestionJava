@@ -19,7 +19,6 @@ public class OptionDao extends ConnectionDB{
 
     /*public Option[] getOptionsByQuestionId(Integer questionId){
         return [];
-
     }*/
 
     public Boolean getOptionsByQuestionId(ArrayList<Option> options, Integer idQuestion){
@@ -54,6 +53,10 @@ public class OptionDao extends ConnectionDB{
             }
         }
 
+    }
+
+    private Boolean convertBoolean(String value) {
+        return value.equals("1");
     }
 
 }

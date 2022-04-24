@@ -9,12 +9,12 @@ import model.interfaces.IOption;
  * @since 1.0.0 2022-04-22.
  */
 public class Option extends Information implements IOption {
+
     private boolean isCorrect;
 
     public Option(String text) {
         super(text);
     }
-
     @Override
     public void setCorrect(boolean correct) {
         isCorrect = correct;
@@ -24,4 +24,12 @@ public class Option extends Information implements IOption {
         return this.isCorrect;
     }
 
+    @Override
+    public String toString() {
+        return "Option{" +
+                "id=" + id +
+                ", info='" + info + '\'' +
+                ", isCorrect=" + isCorrect +
+                '}';
+    }
 }

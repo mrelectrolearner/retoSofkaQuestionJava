@@ -9,10 +9,10 @@ import java.util.ArrayList;
 public interface IRound {
 
 
-
     boolean checkOption(Option option);
 
     ArrayList<Option> getOptions();
+
     void addOptions(Option option);
 
     String getRandomQuestion();

@@ -11,7 +11,7 @@ public abstract class  Person {
 
 
     public abstract void setName(String name);
-    public abstract String getName(String name);
+    public abstract String getName();
     public abstract Integer getId();
     public abstract void setId(Integer id);
 

@@ -1,28 +1,29 @@
 package model;
 
 /**
- *Represent a player.
- * @version 1.0.0 2022-04-22.
+ * Represent a player.
+ *
  * @author
+ * @version 1.0.0 2022-04-22.
  * @since 1.0.0 2022-04-22.
  */
-public class Player extends  Person {
+public class Player extends Person {
     private Integer score;
 
 
-    public Player(){
+    public Player() {
 
     }
 
 
     @Override
     public void setName(String name) {
-        this.name=name;
+        this.name = name;
 
     }
 
     @Override
-    public String getName(String name) {
+    public String getName() {
         return this.name;
     }
 
@@ -34,7 +35,7 @@ public class Player extends  Person {
 
     @Override
     public void setId(Integer id) {
-        this.id= this.id;
+        this.id = this.id;
 
     }
 
