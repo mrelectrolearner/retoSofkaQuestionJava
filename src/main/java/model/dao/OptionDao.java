@@ -36,8 +36,8 @@ public class OptionDao extends ConnectionDB{
                 option.setInfo (rs.getString("answer"));
                 option.setId(rs.getInt("id_answer_option"));
                 option.setCorrect(rs.getBoolean("is_correct"));
-
                 options.add(option);
+
             }
             return true;
         } catch (SQLException e) {
