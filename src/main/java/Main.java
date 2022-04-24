@@ -1,8 +1,6 @@
 import model.Option;
-import model.Player;
 import model.Question;
 import model.dao.OptionDao;
-import model.dao.PlayerDao;
 import model.dao.QuestionDao;
 
 import java.util.ArrayList;
@@ -14,7 +12,7 @@ public class Main {
 
         Question question=new Question("");
         ArrayList<Option> options=new ArrayList<>();
-       questionDao.findQuestion(1,question);
+       questionDao.findQuestionByCategory(2,question);
        optionDao.getOptionsByQuestionId(options, question.getId());
 
        System.out.println(question.getInfo());

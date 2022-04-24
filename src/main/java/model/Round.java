@@ -28,27 +28,33 @@ public class Round implements IRound {
         return null;
     }
 
+    @Override
     public ArrayList<Option> getOptions() {
         return options;
     }
 
+    @Override
     public void addOptions(Option option) {
         options.add(option);
     }
 
+    @Override
     public Question getQuestion() {
         return question;
     }
 
+    @Override
     public void setQuestion(String question) {
 
         this.question = new Question(question);;
     }
 
+    @Override
     public Integer getCategory() {
         return category;
     }
 
+    @Override
     public void setCategory(Integer category) {
         this.category = category;
     }

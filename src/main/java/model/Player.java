@@ -1,14 +1,12 @@
 package model;
 
-import model.interfaces.IPlayer;
-
 /**
  *Represent a player.
  * @version 1.0.0 2022-04-22.
  * @author
  * @since 1.0.0 2022-04-22.
  */
-public class Player extends  Person implements IPlayer {
+public class Player extends  Person {
     private Integer score;
 
 
@@ -21,11 +19,18 @@ public class Player extends  Person implements IPlayer {
 
     }
 
+    @Override
+    public String getName(String name) {
+        return this.name;
+    }
 
+    @Override
     public Integer getId() {
         return id;
 
     }
+
+    @Override
     public void setId(Integer id) {
         this.id= this.id;
 

@@ -18,21 +18,12 @@ public class QuestionDao extends ConnectionDB {
     public QuestionDao() {
     }
 
-   /* public Round getQuestionByCategory(Integer category) {
-        return new Round();
-    }
-
-    ;*/
-
-    /*private Integer getQuestionIdByQuestion(String question) {
-        return 0;
-    }*/
 
     public Boolean saveQuestion(Round round) {
         return false;
     }
 
-    public boolean findQuestion(Integer category, Question question) {
+    public boolean findQuestionByCategory(Integer category, Question question) {
         PreparedStatement ps = null;
         ResultSet rs = null;
         Connection con = getConnection();

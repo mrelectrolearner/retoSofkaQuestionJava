@@ -1,23 +1,23 @@
 package model;
 /**
- *Represent information about the question use in the program.
+ *Represent information about the question or answer options use in the program.
  * @version 1.0.0 2022-04-22.
  * @author
  * @since 1.0.0 2022-04-22.
  */
 public class Information {
     public  Integer id;
-    protected String text;
+    protected String info;
 
-    public Information(String text) {
-        this.text = text;
+    public Information(String info) {
+        this.info = info;
     }
 
     public String getInfo(){
-        return this.text;
+        return this.info;
     };
     public void setInfo(String text){
-        this.text= text;
+        this.info = text;
     }
 
     public Integer getId() {
