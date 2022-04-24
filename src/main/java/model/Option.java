@@ -6,4 +6,13 @@ package model;
  * @since 1.0.0 2022-04-22.
  */
 public class Option extends Information{
+    @Override
+    public void showInfo() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return null;
+    }
 }

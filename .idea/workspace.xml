@@ -4,14 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="720863f6-cfb6-4a5d-b601-cb40587061d1" name="Changes" comment="" />
+    <list default="true" id="720863f6-cfb6-4a5d-b601-cb40587061d1" name="Changes" comment="Create retoSofkaJavaMaven project: the project was created and structured. Some clases, interface and abstract class were added.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Option.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/ConnectionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/GameDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/GameDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/PlayerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/PlayerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/QuestionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/Round.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/Round.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28DEwAZJfnhtKmnzzRSfufTEElP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -19,12 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-8.0.27.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="retoSofkaQuestionJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,6 +69,29 @@
       <option name="presentableId" value="Default" />
       <updated>1650742991503</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create retoSofkaJavaMaven project: the project was created and structured. Some clases, interface and abstract class were added.">
+      <created>1650743201889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650743201890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create retoSofkaJavaMaven project: the project was created and structured. Some clases, interface and abstract class were added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create retoSofkaJavaMaven project: the project was created and structured. Some clases, interface and abstract class were added." />
   </component>
 </project>

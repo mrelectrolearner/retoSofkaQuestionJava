@@ -13,10 +13,10 @@ import java.util.ArrayList;
 public class OptionDao {
     OptionDao(){}
 
-    public Option[] getOptionsByQuestionId(Integer questionId){
+    /*public Option[] getOptionsByQuestionId(Integer questionId){
         return [];
 
-    }
+    }*/
 
     public void saveOptions(Option[] options, Integer idOption){
 

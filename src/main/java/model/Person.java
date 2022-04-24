@@ -6,11 +6,11 @@ package model;
  * @since 1.0.0 2022-04-22.
  */
 public abstract class  Person {
-    private  Integer id;
+    protected Integer id;
     protected String name;
 
 
-    public abstract void setName();
+    public abstract void setName(String name);
 
 
 
@@ -19,4 +19,6 @@ public abstract class  Person {
     public String toString() {
         return "id: "+ this.id+"\n"+"nombre: "+this.name;
     }
+
+    public abstract Integer getId();
 }
