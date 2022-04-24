@@ -1,6 +1,7 @@
 package model.interfaces;
 
 import model.Option;
+import model.Player;
 import model.Question;
 
 import java.util.ArrayList;
@@ -23,5 +24,10 @@ public interface IRound {
     Integer getCategory();
 
     void setCategory(Integer category);
+
+
+    Player getPlayer();
+
+    void setPlayer(Player player);
 
 }

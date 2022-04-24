@@ -25,12 +25,11 @@ public class Main {
        System.out.println(question.getInfo());
        options.forEach(option -> {System.out.println(option.getInfo());});*/
         Record record = new Record();
-        //record.displayRecords();
+        record.displayRecords();
         Player player = new Player();
         player.setName("MateoII");
         player.setScore(1000);
         record.saveRecord(player);
-
 
         /*questionDao.findQuestionByCategory(2,question);
        optionDao.getOptionsByQuestionId(options, question.getId());
