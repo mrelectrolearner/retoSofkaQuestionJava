@@ -55,14 +55,17 @@ public class PlayerDao extends ConnectionDB {
         }
     }
 
-    public static void sevePlayer(Player player) throws SQLException {
-        try (Connection connection = getConnection()) {
+    public void sevePlayer(Player player) throws SQLException {
+        try {
+            Connection con = getConnection();
             String query = "INSERT INTO player (player_name, points) VALUES (?, ?)";
-            PreparedStatement ps = connection.prepareStatement(query);
+            PreparedStatement ps = con.prepareStatement(query);
             ps.setString(1, player.getName());
-            ps.setString(1, player.getScore());
+            ps.setString(2, String.valueOf(player.getScore()));
             ps.executeUpdate();
-            connection.close();
+            con.close();
+        } catch (SQLException e) {
+            System.err.println(e);
         }
     }
 

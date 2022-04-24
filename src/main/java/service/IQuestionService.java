@@ -1,24 +1,22 @@
 package service;
 
+import model.Option;
+import model.Question;
+
+import java.util.ArrayList;
+
 public interface IQuestionService {
 
     /**
      * select randomly a question.
      */
-    void selectQuestion();
+    Question selectQuestion(Integer category);
+
 
     /**
-     * show a question.
+     * get the list of options for a question.
      */
-    void showQuestion();
+    ArrayList<Option> getOptionsByQuestion(Question question);
 
-    /**
-     * show the list of options.
-     */
-    void showOptions();
 
-    /**
-     * check the answer.
-     */
-    void checkAnswer();
 }

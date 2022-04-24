@@ -2,6 +2,7 @@ package model.interfaces;
 
 public interface IOption {
 
-    Boolean isCorrect();
+    boolean isCorrect();
+    void setCorrect(boolean correct);
 
 }

@@ -11,12 +11,14 @@ public abstract class  Person {
 
 
     public abstract void setName(String name);
-
+    public abstract String getName();
+    public abstract Integer getId();
+    public abstract void setId(Integer id);
 
     @Override
     public String toString() {
         return "id: "+ this.id+"\n"+"nombre: "+this.name;
     }
 
-    public abstract Integer getId();
+
 }
