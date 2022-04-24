@@ -1,9 +1,7 @@
 package model.dao;
 
 
-import controller.Game;
-
-import java.util.List;
+import controller.IGame;
 
 /**
  *Represent tge game dao, allowing to interact with the database
@@ -22,7 +20,7 @@ public class GameDao {
       return 0;
     }
 
-    public Boolean saveGameAndPlayer(Game game, Integer finalRound){
+    public Boolean saveGameAndPlayer(IGame IGame, Integer finalRound){
         return false;
     }
 
