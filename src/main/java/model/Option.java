@@ -6,13 +6,19 @@ package model;
  * @since 1.0.0 2022-04-22.
  */
 public class Option extends Information{
-    @Override
-    public void showInfo() {
+    private boolean isCorrect;
 
+    public Option(String text) {
+        super(text);
     }
 
-    @Override
-    public String getInfo() {
-        return null;
+
+    public void setCorrect(boolean correct) {
+        isCorrect = correct;
     }
+
+    public boolean isCorrect() {
+        return this.isCorrect;
+    }
+
 }

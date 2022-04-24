@@ -5,9 +5,19 @@ package model;
  * @author
  * @since 1.0.0 2022-04-22.
  */
-public abstract class Information {
+public class Information {
     protected String text;
 
-    public abstract void showInfo();
-    public abstract String getInfo();
+    public Information(String text) {
+        this.text = text;
+    }
+
+    public String getInfo(){
+        return this.text;
+    };
+    public void setInfo(String text){
+        this.text= text;
+    }
+
+
 }
