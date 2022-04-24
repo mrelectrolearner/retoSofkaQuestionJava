@@ -15,7 +15,6 @@ public class OptionDao {
 
     /*public Option[] getOptionsByQuestionId(Integer questionId){
         return [];
-
     }*/
 
     public void saveOptions(Option[] options, Integer idOption){

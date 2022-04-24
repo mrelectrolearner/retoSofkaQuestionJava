@@ -13,8 +13,6 @@ public abstract class  Person {
     public abstract void setName(String name);
 
 
-
-
     @Override
     public String toString() {
         return "id: "+ this.id+"\n"+"nombre: "+this.name;

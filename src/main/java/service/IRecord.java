@@ -6,6 +6,6 @@ public interface IRecord {
 
     void saveRecord(Player player);
 
-    void displayRecord(Player player);
+    void displayRecords();
 
 }
