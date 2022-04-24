@@ -13,6 +13,15 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/IGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IGameService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/GameDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/GameDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/OptionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IGameService.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +47,22 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/luis/Desktop/Estudios y lectura/programacion/training_sofka/intro programacion/retoSofkaJava/retoSofkaQuestionJava/mysql-connector-java-8.0.27.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controller" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -118,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650819209319</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="implement the interface GameService and RoundService">
+      <created>1650825764231</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650825764231</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +171,7 @@
     <MESSAGE value="update OptionDao and QuestionDao: the query for allowing to bring questions and answer options from the database to the app were implemented." />
     <MESSAGE value="update Option, Player and Question: the interfaces of each class were implemented." />
     <MESSAGE value="update Round interface: the round interface was updated, adding some methods, and it was implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="update Round interface: the round interface was updated, adding some methods, and it was implemented." />
+    <MESSAGE value="implement the interface GameService and RoundService" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement the interface GameService and RoundService" />
   </component>
 </project>

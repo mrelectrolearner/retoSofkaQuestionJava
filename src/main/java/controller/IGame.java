@@ -1,6 +1,6 @@
 package controller;
 
-public interface Game {
+public interface IGame {
 
     void playGame();
 

@@ -28,14 +28,18 @@ public class GameService implements  IGameService{
      */
     /*@Override
     public void endGame(Round round) {
+
+    }
+        round=null;
     }*/
 
     /**
-     * @param player
      * @return
      */
     @Override
-    public Round initGame(Player player) {
+    public Round initGame() {
+        Player player=new Player();
+
         Round round =roundService.initRound(0,player);
         
         return round;
@@ -48,13 +52,16 @@ public class GameService implements  IGameService{
      */
     @Override
     public Round nextRound(Round round, Option optionSelected) {
-        if(roundService.checkAnswer(optionSelected)){
-            round.increaseCategory();
-            return round;
+        if(roundService.isLastRound(round.getCategory())){
+            System.out.println("Felicitaciones ha ganado el juego");
+            return null;
 
         }
+
         //endGame();
 
-        return null;
+        // return null;
+        Round newRound=roundService.initRound(round.getCategory(),round.getPlayer());
+        return newRound;
     }
 }
