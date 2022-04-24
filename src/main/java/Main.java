@@ -1,6 +1,6 @@
-import model.Option;
-import model.Player;
-import model.Question;
+import model.*;
+import service.GameService;
+import service.QuestionService;
 import service.Record;
 import model.dao.OptionDao;
 import model.dao.PlayerDao;
@@ -24,17 +24,31 @@ public class Main {
 
        System.out.println(question.getInfo());
        options.forEach(option -> {System.out.println(option.getInfo());});*/
-        Record record = new Record();
+        /*Record record = new Record();
         record.displayRecords();
         Player player = new Player();
         player.setName("MateoII");
         player.setScore(1000);
-        record.saveRecord(player);
+        record.saveRecord(player);*/
 
         /*questionDao.findQuestionByCategory(2,question);
        optionDao.getOptionsByQuestionId(options, question.getId());
 
        System.out.println(question.getInfo());
        options.forEach(option -> {System.out.println(option.getInfo());});*/
+
+        /*QuestionService questionService = new QuestionService();
+        Question question = questionService.getRandomQuestion(1);
+        ArrayList<Option> options = questionService.getOptionsByQuestion(question);
+        options.forEach(System.out::println);*/
+
+        /*Player player = new Player();
+        player.setName("Luis");
+        player.setScore(1500);
+        Round round = new Round();
+        round.setPlayer(player);
+        GameService gameService = new GameService();
+        gameService.leaveGame(round);*/
+
     }
 }

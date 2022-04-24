@@ -18,6 +18,10 @@ public class Round implements IRound {
     private Question question;
     private Integer category;
 
+
+    public Round() {
+    }
+
     public Round(Player player, ArrayList<Option> options, Question question, Integer category) {
         this.player = player;
         this.options = options;
@@ -77,12 +81,12 @@ public class Round implements IRound {
 
     @Override
     public Player getPlayer() {
-        return null;
+        return this.player;
     }
 
     @Override
     public void setPlayer(Player player) {
-
+        this.player = player;
     }
 
 }

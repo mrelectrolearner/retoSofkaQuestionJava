@@ -35,7 +35,8 @@ public class OptionDao extends ConnectionDB{
                 Option option=new Option("");
                 option.setInfo (rs.getString("answer"));
                 option.setId(rs.getInt("id_answer_option"));
-                option.setCorrect(rs.getBoolean("id_answer_option"));
+                option.setCorrect(rs.getBoolean("is_correct"));
+
                 options.add(option);
             }
             return true;
@@ -52,6 +53,10 @@ public class OptionDao extends ConnectionDB{
             }
         }
 
+    }
+
+    private Boolean convertBoolean(String value) {
+        return value.equals("1");
     }
 
 }

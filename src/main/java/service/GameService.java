@@ -4,6 +4,8 @@ import model.Option;
 import model.Player;
 import model.Round;
 
+import java.sql.SQLException;
+
 public class GameService implements  IGameService{
 
     RoundService roundService;
@@ -16,20 +18,17 @@ public class GameService implements  IGameService{
      * @param round
      */
     @Override
-    public void leaveGame(Round round) {
-
-
-
+    public void leaveGame(Round round) throws SQLException {
+        Record record = new Record();
+        record.saveRecord(round.getPlayer());
     }
 
     /**
      * @param round
      */
-    @Override
+    /*@Override
     public void endGame(Round round) {
-
-
-    }
+    }*/
 
     /**
      * @param player
@@ -54,7 +53,7 @@ public class GameService implements  IGameService{
             return round;
 
         }
-        endGame();
+        //endGame();
 
         return null;
     }

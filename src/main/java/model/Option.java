@@ -23,4 +23,13 @@ public class Option extends Information implements IOption {
     public boolean isCorrect() {
         return this.isCorrect;
     }
+
+    @Override
+    public String toString() {
+        return "Option{" +
+                "id=" + id +
+                ", info='" + info + '\'' +
+                ", isCorrect=" + isCorrect +
+                '}';
+    }
 }
