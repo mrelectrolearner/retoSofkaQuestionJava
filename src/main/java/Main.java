@@ -1,12 +1,21 @@
-import model.Player;
-import model.dao.PlayerDao;
+import model.Option;
+import model.Question;
+import model.dao.OptionDao;
+import model.dao.QuestionDao;
 
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        PlayerDao playerDao = new PlayerDao();
-        ArrayList<Player> players = playerDao.getPlayersInfo();
-        players.forEach(p -> System.out.println(p.getScore()));
+        QuestionDao questionDao = new QuestionDao();
+        OptionDao optionDao=new OptionDao();
+
+        Question question=new Question("");
+        ArrayList<Option> options=new ArrayList<>();
+       questionDao.findQuestionByCategory(2,question);
+       optionDao.getOptionsByQuestionId(options, question.getId());
+
+       System.out.println(question.getInfo());
+       options.forEach(option -> {System.out.println(option.getInfo());});
     }
 }

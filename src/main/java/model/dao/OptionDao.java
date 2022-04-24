@@ -2,6 +2,10 @@ package model.dao;
 
 import model.Option;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
@@ -10,17 +14,48 @@ import java.util.ArrayList;
  * @author
  * @since 1.0.0 2022-04-22.
  */
-public class OptionDao {
-    OptionDao(){}
+public class OptionDao extends ConnectionDB{
+    public OptionDao(){}
 
     /*public Option[] getOptionsByQuestionId(Integer questionId){
         return [];
     }*/
 
-    public void saveOptions(Option[] options, Integer idOption){
+    public Boolean getOptionsByQuestionId(ArrayList<Option> options, Integer idQuestion){
+
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Connection con = getConnection();
+        String query = "SELECT * FROM answer_option WHERE answer_option.id_question=? ";
+        try {
+            ps = con.prepareStatement(query);
+            ps.setInt(1, idQuestion);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Option option=new Option("");
+                option.setInfo (rs.getString("answer"));
+                option.setId(rs.getInt("id_answer_option"));
+                option.setCorrect(rs.getBoolean("id_answer_option"));
+                options.add(option);
+            }
+            return true;
+        } catch (SQLException e) {
+            System.err.println(e);
+            return false;
+        } finally {
+            try {
+                con.close();
+
+            } catch (SQLException e) {
+                System.err.println(e);
+
+            }
+        }
 
     }
 
-
-
 }
+
+
+
+
