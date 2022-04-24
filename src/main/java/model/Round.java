@@ -13,6 +13,7 @@ import java.util.ArrayList;
  */
 
 public class Round implements IRound {
+    private Player player;
     private ArrayList<Option> options;
     private Question question;
     private Integer category;
@@ -57,5 +58,15 @@ public class Round implements IRound {
     @Override
     public void setCategory(Integer category) {
         this.category = category;
+    }
+
+    @Override
+    public Player getPlayer() {
+        return null;
+    }
+
+    @Override
+    public void setPlayer(Player player) {
+
     }
 }
