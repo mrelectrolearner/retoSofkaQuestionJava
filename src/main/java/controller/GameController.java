@@ -16,7 +16,7 @@ public class GameController implements IGame{
     @Override
     public void playGame() {
         Player player=new Player();
-        gameService.initGame();
+        gameService.initGame(player);
 
 
     }

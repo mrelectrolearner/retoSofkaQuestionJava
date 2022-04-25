@@ -12,7 +12,7 @@ public class Player extends Person {
 
 
     public Player() {
-
+        this.score = 0;
     }
 
 

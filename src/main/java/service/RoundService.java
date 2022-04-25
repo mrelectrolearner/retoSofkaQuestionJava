@@ -6,6 +6,7 @@ import model.Question;
 import model.Round;
 
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 
@@ -30,16 +31,22 @@ public class RoundService implements IRoundService {
      * @return
      */
     @Override
-    public Round initRound(Integer category, Player player) {
+    public Round initRound(Integer category, Player player)  {
+        try {
+            Question question=questionService.getRandomQuestion(category);
+            Thread.sleep(2000);
+            ArrayList<Option> options=questionService.getOptionsByQuestion(question);
+            Round round=new Round( player, options,question, category);
 
-        Question question=questionService.getRandomQuestion(category);
-        ArrayList<Option> options=questionService.getOptionsByQuestion(question);
-
-        Round round=new Round( player, options,question, category);
-
-        return round;
+            return round;
+        }
+        catch (InterruptedException e) {
+            System.out.println(e);
+            return new Round();
+        }
 
     }
+
 
 
 
@@ -51,10 +58,7 @@ public class RoundService implements IRoundService {
      */
     @Override
     public Boolean isLastRound(Integer category) {
-        if(category>4){
-            return true;
-        }
-        return false;
+        return category>4;
     }
 
     /**

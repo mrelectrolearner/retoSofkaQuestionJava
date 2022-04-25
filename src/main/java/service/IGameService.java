@@ -1,6 +1,7 @@
 package service;
 
 import model.Option;
+import model.Player;
 import model.Round;
 
 import java.sql.SQLException;
@@ -11,6 +12,6 @@ public interface IGameService {
 
     // void endGame(Round round);
 
-    Round initGame();
-    Round nextRound(Round round, Option optionSelected);
+    Round initGame(Player player);
+    Round nextRound(Round round);
 }

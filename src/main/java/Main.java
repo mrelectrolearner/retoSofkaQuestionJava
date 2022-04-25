@@ -1,7 +1,9 @@
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import model.*;
 import service.GameService;
 import service.QuestionService;
 import service.Record;
+import  service.Menu;
 import model.dao.OptionDao;
 import model.dao.PlayerDao;
 import model.Question;
@@ -12,7 +14,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) {
+
+            char opcSelected ;
+            do {
+                opcSelected = Menu.mainMenu();
+                Menu.executeAction(opcSelected);
+            } while(opcSelected != '4');
+
         /*QuestionDao questionDao = new QuestionDao();
         QuestionDao questionDao = new QuestionDao();
         OptionDao optionDao=new OptionDao();
@@ -43,7 +52,7 @@ public class Main {
         options.forEach(System.out::println);*/
 
         /*Player player = new Player();
-        player.setName("Luis");
+        player.setName("Pepe");
         player.setScore(1500);
         Round round = new Round();
         round.setPlayer(player);

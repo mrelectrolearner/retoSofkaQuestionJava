@@ -18,9 +18,14 @@ public class GameService implements  IGameService{
      * @param round
      */
     @Override
-    public void leaveGame(Round round) throws SQLException {
-        Record record = new Record();
-        record.saveRecord(round.getPlayer());
+    public void leaveGame(Round round) {
+        try {
+            Record record = new Record();
+            record.saveRecord(round.getPlayer());
+        }
+        catch (SQLException exception){
+            System.out.println(exception);
+        }
     }
 
     /**
@@ -37,10 +42,9 @@ public class GameService implements  IGameService{
      * @return
      */
     @Override
-    public Round initGame() {
-        Player player=new Player();
+    public Round initGame(Player player) {
 
-        Round round =roundService.initRound(0,player);
+        Round round =roundService.initRound(1,player);
         
         return round;
 
@@ -51,16 +55,7 @@ public class GameService implements  IGameService{
      * @return
      */
     @Override
-    public Round nextRound(Round round, Option optionSelected) {
-        if(roundService.isLastRound(round.getCategory())){
-            System.out.println("Felicitaciones ha ganado el juego");
-            return null;
-
-        }
-
-        //endGame();
-
-        // return null;
+    public Round nextRound(Round round) {
         Round newRound=roundService.initRound(round.getCategory(),round.getPlayer());
         return newRound;
     }
