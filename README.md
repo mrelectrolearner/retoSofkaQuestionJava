@@ -1,5 +1,11 @@
 # retoSofkaQuestionJava
 
+## Montar base de datos y modificar credenciales de MySQL
+Se agregó en el directorio principal del proyecto el script de SQL, llamado QAScript.sql. Por favor, ejecutar este archivo para montar la base de datos con las preguntas, respuestas y algunos jugadores por defecto. El nombre del 'schema' es database_challenge
+### Credenciales MySQL
+Por favor, modificar las credenciales de MySQL (url, user, password) en el archivo ubicado en el path src/main/java/model/dao/ConnectionDB.java,
+para conectar correctamente la base de datos con la aplicación de manera local.
+
 ## Planteamiento del reto
 
 En este reto vamos a modelar un concurso de preguntas y respuestas, la intención es diseñar una solución que permita tener un banco de preguntas con diferentes opciones para una única respuesta, además cada pregunta debe estar en una categoría o un grupos de preguntas similares del mismo nivel, por cada ronda se deberá asignar un premio a conseguir, las rondas del juego son nivel que van aumentando en la medida que el jugador gana premios.
