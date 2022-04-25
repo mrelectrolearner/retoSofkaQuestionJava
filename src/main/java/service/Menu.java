@@ -19,7 +19,7 @@ public class Menu {
                 //inputNewQuestion();
                 break;
             case '3':
-                //showGamesHistorical();
+                showGamesHistorical();
             default:
                 break;
         }
@@ -31,7 +31,8 @@ public class Menu {
     }
 
     private static void showGamesHistorical(){
-
+        Record record = new Record();
+        record.displayRecords();
     }
 
     private static String inputPlayerName() {

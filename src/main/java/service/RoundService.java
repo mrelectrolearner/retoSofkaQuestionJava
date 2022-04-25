@@ -58,7 +58,7 @@ public class RoundService implements IRoundService {
      */
     @Override
     public Boolean isLastRound(Integer category) {
-        return category>4;
+        return category>5;
     }
 
     /**

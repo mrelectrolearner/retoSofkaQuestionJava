@@ -49,14 +49,15 @@ public class CurrentGame {
                 case 'D':
                     isCorrect = optionD.isCorrect();
                     break;
-                case 'E':
-                    gameService.leaveGame(round);
-                    JOptionPane.showMessageDialog(null, "Señor jugador, usted ha finalizado el juego manualmente con: " + player.getScore() +" puntos.");
-                    break;
+            }
+            if (opcSelected == 'E') {
+                gameService.leaveGame(round);
+                JOptionPane.showMessageDialog(null, "Señor jugador, usted ha finalizado el juego manualmente con: " + player.getScore() +" puntos.");
+                break;
             }
             if(isCorrect) {
                 player.setScore(player.getScore() + round.getCategory() * 100);
-                if(roundService.isLastRound(round.getCategory())) {
+                if(roundService.isLastRound(round.getCategory()+1)) {
                     gameService.leaveGame(round);
                     JOptionPane.showMessageDialog(null, "Señor jugador, usted ha ganado el juego con un puntaje de: " + player.getScore() +" puntos.");
                     break;

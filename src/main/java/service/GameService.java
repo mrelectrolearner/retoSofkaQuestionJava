@@ -56,7 +56,7 @@ public class GameService implements  IGameService{
      */
     @Override
     public Round nextRound(Round round) {
-        Round newRound=roundService.initRound(round.getCategory(),round.getPlayer());
+        Round newRound=roundService.initRound(round.getCategory()+1,round.getPlayer());
         return newRound;
     }
 }
