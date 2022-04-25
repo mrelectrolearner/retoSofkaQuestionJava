@@ -7,17 +7,17 @@ package model;
  */
 public class Information {
     public  Integer id;
-    protected String info;
+    protected String information;
 
     public Information(String info) {
-        this.info = info;
+        this.information = info;
     }
 
-    public String getInfo(){
-        return this.info;
+    public String getInformation(){
+        return this.information;
     };
-    public void setInfo(String text){
-        this.info = text;
+    public void setInformation(String text){
+        this.information = text;
     }
 
     public Integer getId() {

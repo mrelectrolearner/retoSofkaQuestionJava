@@ -26,12 +26,4 @@ public interface IRoundService {
      *check if it is the last round.
      */
     Boolean isLastRound(Integer category);
-
-    /**
-     * check the answer selected.
-     *
-     * @return
-     */
-    boolean checkAnswer(Option optionSelected);
-
 }

@@ -9,21 +9,25 @@ import java.sql.SQLException;
 import java.util.*;
 
 public class Menu {
-    public Menu () { }
+    public Menu () {
+
+    }
+
+
     public static void executeAction(char opcSelected) {
         switch(opcSelected){
             case '1':
                 buildNewGame();
                 break;
             case '2':
-                //inputNewQuestion();
-                break;
-            case '3':
                 showGamesHistorical();
+                break;
             default:
                 break;
         }
     }
+
+
     private static void buildNewGame() {
         Player currentPlayer = new Player();
         currentPlayer.setName(inputPlayerName());
@@ -34,6 +38,7 @@ public class Menu {
         Record record = new Record();
         record.displayRecords();
     }
+
 
     private static String inputPlayerName() {
         String name = "";
@@ -49,10 +54,9 @@ public class Menu {
             opcSelected = JOptionPane.showInputDialog(null,
                     "*********MENU OPCIONES*********" + "\n" +
                             "1. Nuevo juego" + "\n" +
-                            "2. Ingresar una nueva pregunta" + "\n" +
-                            "3. Ver historiales de juegos" + "\n" +
-                            "4. Salir").charAt(0);
-        } while(opcSelected < '1' || opcSelected > '4');
+                            "2. Ver Historiales de Juegos" + "\n" +
+                            "3. Salir").charAt(0);
+        } while(opcSelected < '1' || opcSelected > '3');
 
         return opcSelected;
     }

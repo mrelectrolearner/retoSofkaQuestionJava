@@ -17,9 +17,6 @@ public class QuestionDao extends ConnectionDB {
 
     public QuestionDao() {
     }
-   /* public Round getQuestionByCategory(Integer category) {
-        return new Round();
-    }*/
 
     public Boolean saveQuestion(Round round) {
         return false;
@@ -35,7 +32,7 @@ public class QuestionDao extends ConnectionDB {
             ps.setInt(1, category);
             rs = ps.executeQuery();
             if (rs.next()) {
-                question.setInfo(rs.getString("question"));
+                question.setInformation(rs.getString("question"));
                 question.setId(rs.getInt("id_question"));
 
 
@@ -65,7 +62,7 @@ public class QuestionDao extends ConnectionDB {
             ps.setInt(1, category);
             rs = ps.executeQuery();
             if (rs.next()) {
-                question.setInfo(rs.getString("question"));
+                question.setInformation(rs.getString("question"));
                 question.setId(rs.getInt("id_question"));
 
 

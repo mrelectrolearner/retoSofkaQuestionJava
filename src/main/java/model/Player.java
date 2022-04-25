@@ -10,11 +10,9 @@ package model;
 public class Player extends Person {
     private Integer score;
 
-
     public Player() {
         this.score = 0;
     }
-
 
     @Override
     public void setName(String name) {

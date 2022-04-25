@@ -29,16 +29,6 @@ public class GameService implements  IGameService{
     }
 
     /**
-     * @param round
-     */
-    /*@Override
-    public void endGame(Round round) {
-
-    }
-        round=null;
-    }*/
-
-    /**
      * @return
      */
     @Override

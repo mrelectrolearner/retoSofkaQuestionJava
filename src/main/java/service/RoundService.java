@@ -47,11 +47,6 @@ public class RoundService implements IRoundService {
 
     }
 
-
-
-
-
-
     /**
      * @param category
      * @return
@@ -59,16 +54,5 @@ public class RoundService implements IRoundService {
     @Override
     public Boolean isLastRound(Integer category) {
         return category>5;
-    }
-
-    /**
-     * @param optionSelected
-     * @return
-     */
-    @Override
-    public boolean checkAnswer(Option optionSelected) {
-
-
-        return false;
     }
 }

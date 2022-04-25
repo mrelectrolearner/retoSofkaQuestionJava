@@ -28,7 +28,7 @@ public class Option extends Information implements IOption {
     public String toString() {
         return "Option{" +
                 "id=" + id +
-                ", info='" + info + '\'' +
+                ", info='" + information + '\'' +
                 ", isCorrect=" + isCorrect +
                 '}';
     }

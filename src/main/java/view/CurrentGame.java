@@ -25,48 +25,61 @@ public class CurrentGame {
             Option optionB = round.getOptions().get(1);
             Option optionC = round.getOptions().get(2);
             Option optionD = round.getOptions().get(3);
-            char opcSelected = ' ';
+            char opcSelected = answerOption(question, optionA, optionB, optionC, optionD);
 
-            do {
-                opcSelected = JOptionPane.showInputDialog(null, question.getInfo() + "\n" +
-                        "A. " + optionA.getInfo() + "\n" +
-                        "B. " + optionB.getInfo() + "\n" +
-                        "C. " + optionC.getInfo() + "\n" +
-                        "D. " + optionD.getInfo() + "\n" +
-                        "E. Abandonar juego.").charAt(0);
-            } while(opcSelected < 'A' || opcSelected > 'E');
-            boolean isCorrect = false;
-            switch (opcSelected){
-                case 'A':
-                    isCorrect = optionA.isCorrect();
-                    break;
-                case 'B':
-                    isCorrect = optionB.isCorrect();
-                    break;
-                case 'C':
-                    isCorrect = optionC.isCorrect();
-                    break;
-                case 'D':
-                    isCorrect = optionD.isCorrect();
-                    break;
-            }
             if (opcSelected == 'E') {
                 gameService.leaveGame(round);
                 JOptionPane.showMessageDialog(null, "Señor jugador, usted ha finalizado el juego manualmente con: " + player.getScore() +" puntos.");
                 break;
             }
-            if(isCorrect) {
-                player.setScore(player.getScore() + round.getCategory() * 100);
-                if(roundService.isLastRound(round.getCategory()+1)) {
-                    gameService.leaveGame(round);
-                    JOptionPane.showMessageDialog(null, "Señor jugador, usted ha ganado el juego con un puntaje de: " + player.getScore() +" puntos.");
-                    break;
-                }
-            } else {
+
+            boolean isCorrect = isAnswerCorrect(opcSelected,optionA, optionB, optionC, optionD);
+
+            if (!isCorrect){
                 JOptionPane.showMessageDialog(null, "Señor jugador, usted ha respondido incorrectamente, el juego ha finalizado");
+                break;
+            }
+
+            player.setScore(player.getScore() + round.getCategory() * 100);
+
+            if(roundService.isLastRound(round.getCategory()+1)) {
+                gameService.leaveGame(round);
+                JOptionPane.showMessageDialog(null, "Señor jugador, usted ha ganado el juego con un puntaje de: " + player.getScore() +" puntos.");
                 break;
             }
             round = gameService.nextRound(round);
         }
+    }
+
+    public static char answerOption (Question question, Option optionA, Option optionB, Option optionC, Option optionD) {
+        char opcSelected = ' ';
+        do {
+            opcSelected = JOptionPane.showInputDialog(null, question.getInformation() + "\n" +
+                    "A. " + optionA.getInformation() + "\n" +
+                    "B. " + optionB.getInformation() + "\n" +
+                    "C. " + optionC.getInformation() + "\n" +
+                    "D. " + optionD.getInformation() + "\n" +
+                    "E. Abandonar juego.").charAt(0);
+        } while(opcSelected < 'A' || opcSelected > 'E');
+        return  opcSelected;
+    }
+
+    public static boolean isAnswerCorrect (char opcSelected, Option optionA, Option optionB, Option optionC,Option optionD){
+        boolean isCorrect = false;
+        switch (opcSelected){
+            case 'A':
+                isCorrect = optionA.isCorrect();
+                break;
+            case 'B':
+                isCorrect = optionB.isCorrect();
+                break;
+            case 'C':
+                isCorrect = optionC.isCorrect();
+                break;
+            case 'D':
+                isCorrect = optionD.isCorrect();
+                break;
+        }
+        return isCorrect;
     }
 }
