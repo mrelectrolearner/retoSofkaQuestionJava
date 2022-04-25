@@ -9,6 +9,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
+
+/**
+ *Represent the question service use in the program to get a question randomly and the corresponding answer options.
+ * @version 1.0.0 2022-04-22.
+ * @author
+ * @since 1.0.0 2022-04-22.
+ */
 public class QuestionService implements IQuestionService {
     public QuestionService() {
     }
