@@ -10,7 +10,12 @@ import javax.swing.*;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
-
+/**
+ *Represent the question and option menu show to the user.
+ * @version 1.0.0 2022-04-22.
+ * @author
+ * @since 1.0.0 2022-04-22.
+ */
 public class CurrentGame {
 
     public static void playCurrentGame(Player player)  {
