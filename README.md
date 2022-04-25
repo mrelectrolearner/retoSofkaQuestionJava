@@ -26,4 +26,4 @@ El acomulado de premios está dentro del concurso pero si dado el caso el jugado
 
 Java
 
-SQL
+mySQL
