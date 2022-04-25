@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 
 /**
- *Represent
+ *Represent the round service use to init a round and check if a round is the last one.
  * @version 1.0.0 2022-04-22.
  * @author
  * @since 1.0.0 2022-04-22.
@@ -26,10 +26,7 @@ public class RoundService implements IRoundService {
         questionService=new QuestionService();
     }
 
-    /**
-     * @param category
-     * @return
-     */
+
     @Override
     public Round initRound(Integer category, Player player)  {
         try {
