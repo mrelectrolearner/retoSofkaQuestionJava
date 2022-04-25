@@ -6,6 +6,12 @@ import model.Round;
 
 import java.sql.SQLException;
 
+/**
+ *Represent service provided to implement the game: leave the game, init the game and play the next round.
+ * @version 1.0.0 2022-04-22.
+ * @author
+ * @since 1.0.0 2022-04-22.
+ */
 public class GameService implements  IGameService{
 
     RoundService roundService;
