@@ -8,6 +8,12 @@ import javax.swing.*;
 import java.sql.SQLException;
 import java.util.*;
 
+/**
+ *Represent the menu service use in the program to interact with the user.
+ * @version 1.0.0 2022-04-22.
+ * @author
+ * @since 1.0.0 2022-04-22.
+ */
 public class Menu {
     public Menu () {
 
