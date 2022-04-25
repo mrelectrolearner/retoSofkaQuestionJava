@@ -12,7 +12,12 @@ import model.dao.QuestionDao;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-
+/**
+ *Init the game and show the main menu to the users.
+ * @version 1.0.0 2022-04-22.
+ * @author
+ * @since 1.0.0 2022-04-22.
+ */
 public class Main {
     public static void main(String[] args) {
 
